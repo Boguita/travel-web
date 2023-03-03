@@ -1,7 +1,8 @@
 import React from 'react'
 import './main.css';
+import  {Places}  from './Places' 
 
-const Main = () => {
+const Main = () => {  
   return (
     <section className='main container section'>
         <div className="secTitle">
@@ -10,8 +11,8 @@ const Main = () => {
           </h3>
         </div>
 
-        <div className="secContent grid">
-          
+        <div className="secContent grid">          
+            <Places />          
         </div>
     </section>
   )
