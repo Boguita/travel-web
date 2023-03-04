@@ -1,11 +1,11 @@
-import dataPlaces from '../../data/index'
+import dataPlaces from '../../data/places'
 import { HiOutlineLocationMarker, HiOutlineClipboardCheck } from 'react-icons/hi'
 
 export const Places = () => {  
   return(
     dataPlaces.map(({id, imgSrc, destTitle, location, grade, fees, description}) => {
       return(
-        <div key={id} className="singleDestination">
+        <div data-aos="fade-up" key={id} className="singleDestination">
 
           <div className="imageDiv">
             <img src={imgSrc} alt={destTitle} />
